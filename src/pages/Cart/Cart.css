@@ -1,0 +1,21 @@
+ .cartheader{
+   display: flex;
+   justify-content: space-between;
+   margin-right: 32px;
+ }
+ .cartlength{
+   font-size: 32px;
+   
+ }
+ .table{
+    width: 100%;
+    border: 1px solid white;
+     text-align: center;    
+ }
+ .messagescaer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 32px;
+ }
