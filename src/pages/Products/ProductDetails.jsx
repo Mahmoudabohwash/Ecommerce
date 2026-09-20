@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import products from "../../Data/products";
-import Count from "../../components/Navbar/Actions/Counter/Count"
 
 function ProductDetails({ setCart }) {
   const { id } = useParams();
@@ -11,7 +10,6 @@ function ProductDetails({ setCart }) {
     <div className="product-details">
       <ProductCard  product={product} setCart={setCart} />
         <p>{product.description}</p>
-        < Count />
       <div>
       </div>
     </div>

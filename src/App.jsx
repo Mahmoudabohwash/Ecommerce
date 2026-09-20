@@ -8,10 +8,13 @@ import ProductDetails from "./pages/Products/ProductDetails";
 import { useState } from "react";
 import Cartpage from "./components/Navbar/Actions/cart/cart";
 
-
 function App() {
   console.log("App Render");
-  const [cart, setCart] = useState([]);
+  const saveCart  =localStorage.getItem("cart")
+  console.log("saveCart"  , saveCart)
+  const parsedCart = JSON.parse(saveCart || "[]")
+  console.log(  "parsedCart" ,  parsedCart)
+  const [cart, setCart] = useState(parsedCart);
   const [search, setSearch] = useState("");
   return (
     <Router>
@@ -36,17 +39,6 @@ function App() {
         />
 
 
-
-
-
-
-
-
-
-
-
-
-        
         <Route
           path="/Cart"
           element={<Cartpage cart={cart} setCart={setCart} />}

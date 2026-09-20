@@ -4,7 +4,7 @@
     return(
         <header className="HeaderCategory">
         <h3> Shop by Category</h3>
-       <Link to="/categories" >
+       <Link to="/categories" className="ViewAll" >
        View All
        </Link>
         </header>

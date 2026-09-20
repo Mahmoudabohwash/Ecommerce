@@ -1,11 +1,7 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Cart from "../../../pages/Cart/Cart";
 function Search({ search, setSearch ,cart}) {
-  console.log("search", search)
-  useEffect(() => {
-    console.log("search Changed" , search)
-  }, [search])
+ 
   return (
     <div className="search-container">
       <search className="search">
@@ -19,9 +15,9 @@ function Search({ search, setSearch ,cart}) {
       </search>
 
       <Link
-      to="/Cart"
+      to="/Cart" className="cartline"
       >
-        < Cart cart={cart} />
+        < Cart cart={cart}  />
       </Link>
     </div>
   );

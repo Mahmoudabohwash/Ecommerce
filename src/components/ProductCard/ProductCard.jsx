@@ -4,17 +4,21 @@ function ProductCard({ product, setCart }) {
   function handleAddtoCart() {
     setCart((procart) => {
       const exist = procart.find((item) => item.id === product.id);
+      let newCart;
+
       if (exist) {
-        return procart;
+        newCart = procart;
       } else {
-        return [...procart, { ...product, qty: 1 }];
+        newCart = [...procart, { ...product, qty: 1 }];
       }
+      localStorage.setItem("cart", JSON.stringify(newCart));
+      return newCart;
     });
   }
 
   return (
     <div className="ProductCard">
-      <Link to={`/product/${product.id}`}>
+      <Link className="productcard" to={`/product/${product.id} `}>
         <img className="product-image" src={product.image} alt={product.name} />
         <h3>{product.name}</h3>
         <p>${product.price}</p>

@@ -8,10 +8,10 @@ function Preview({ products, setCart, search }) {
       {filterpro.length > 0 ? (
         filterpro.map((product) => (
           <ProductCard key={product.id} 
-          product={product} setCart={setCart} />
+          product={product} setCart={setCart}  />
         ))
       ) : (
-        <p>No Data search shop :"{search}"</p>
+        <p className="soon">it will appear soon 🚧</p>
       )}
     </div>
   );

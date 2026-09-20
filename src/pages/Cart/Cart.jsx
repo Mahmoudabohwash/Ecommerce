@@ -1,9 +1,8 @@
-
-function Cart({ cart }) {
+function Cart() {
   return (
     <div className="cart">
-      <div className="cart-icon">
-        🛒<span className="cart-count">{cart}</span>
+      <div className="cart-icon" >
+        <p>🛒</p>
       </div>
     </div>
   );

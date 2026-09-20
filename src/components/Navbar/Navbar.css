@@ -35,7 +35,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-     width: 240px;
+    width: 240px;
     gap: var(--space-3);
     padding-inline: var(--space-3);
     background-color: var(--color-surface);
@@ -44,15 +44,17 @@
     color: var(--color-text);
     outline: none;
 }
+
 .input {
-    width: 90px;
+    width: 120px;
     height: 30px;
     border-radius: 10px;
     background-color: rgba(15, 15, 24, 0.816);
     font-size: 15px;
     color: var(--color-text);
 }
-.cart{
+
+.cart {
     width: 30px;
     height: 30px;
     border: 1px solid var(--color-border);
@@ -65,11 +67,10 @@
     cursor: pointer;
 }
 
-.search  {
-    width: 100%;
+.search {
     height: 40px;
     margin-top: 5px;
-    
+
 }
 
 .search:focus {

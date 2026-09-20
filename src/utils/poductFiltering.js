@@ -11,7 +11,7 @@ export function filtersearch(products, search) {
       return products.filter(product =>
       product.name.toLowerCase()
          .includes(search.toLowerCase())
-   ) ||[];
+   );
 
 
 }

@@ -19,3 +19,9 @@
     height: 100%;
     font-size: 32px;
  }
+
+ .cartline {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+ }

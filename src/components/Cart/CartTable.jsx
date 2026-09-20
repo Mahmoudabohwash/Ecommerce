@@ -8,7 +8,7 @@ function CartTable({ cart, setCart }) {
   const handelDelete = (id) => {
     const newCart = removeDelete(cart, id);
     setCart(newCart);
-  };
+  }; 
   function UpdateQty(productId, action) {
     const result = cart.map((product) => {
       if (product.id === productId) {
@@ -25,6 +25,7 @@ function CartTable({ cart, setCart }) {
     });
     setCart(result);
   }
+  console.log("Cart" , cart)
 
   return (
     <table className="table">

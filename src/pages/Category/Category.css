@@ -15,6 +15,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
   gap: 12px;
   padding: 16px;
   background: hsla(0, 2%, 9%, 0.544); 
@@ -25,9 +26,19 @@
 }
 
 .category-card:hover {
+ 
   border-color: #2d2c2c; 
   transform: translateY(-2px);
 }
+.headerCategories{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 6px;
+  margin-right: 6px;
+   
+}
+
 
 .category-card img {
   width: 80px;
@@ -44,4 +55,8 @@
   color: #f9f1f1; 
   margin: 0;
   text-align: center;
+}
+.ViewAll{
+  text-decoration:none;
+  color: rgb(253, 251, 251);
 }
